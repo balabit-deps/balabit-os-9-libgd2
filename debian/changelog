@@ -1,3 +1,13 @@
+libgd2 (2.3.0-2ubuntu2.3) jammy-security; urgency=medium
+
+  * SECURITY UPDATE: gdGetBuf and gdPutBuf are missing bounds checks,
+    allowing for out-of-bounds reads.
+    - debian/patches/CVE-2021-40812.patch: Add bounds checking after gdPutBuf
+      calls.
+    - CVE-2021-40812 
+
+ -- Nicolas Campuzano Jimenez <nicolas.campuzano@canonical.com>  Wed, 13 Nov 2024 18:10:36 -0500
+
 libgd2 (2.3.0-2ubuntu2) jammy; urgency=medium
 
   * No-change rebuild against latest libwebp
